@@ -1,0 +1,265 @@
+body{
+  margin: 0;
+  padding: 10px;
+
+  background: #dcdcdc;
+
+  font-family: "Times New Roman";
+}
+
+
+
+/* CONTROL PANEL */
+
+.controls{
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 15px;
+}
+
+.controls input,
+.controls button{
+
+  padding: 8px;
+
+  font-size: 14px;
+}
+
+
+
+/* PAGE */
+
+.page{
+
+  width: 1120px;
+
+  min-height: 760px;
+
+  background: white;
+
+  margin: auto;
+  margin-bottom: 20px;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+
+
+/* EDIT BAR */
+
+.edit-bar{
+
+  display: flex;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.edit-bar input{
+
+  padding: 5px;
+
+  width: 90px;
+
+  font-size: 14px;
+}
+
+.edit-bar button{
+
+  padding: 5px 10px;
+
+  cursor: pointer;
+}
+
+
+
+/* TITLE */
+
+.title{
+
+  text-align: center;
+}
+
+.title h1{
+
+  margin: 0;
+
+  font-size: 26px;
+
+  font-weight: bold;
+}
+
+.title h2{
+
+  margin: 5px 0;
+
+  font-size: 20px;
+}
+
+.title h3{
+
+  margin: 5px 0;
+
+  font-size: 16px;
+}
+
+
+
+/* TOP INFO */
+
+.top-info{
+
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 16px;
+
+  font-weight: bold;
+}
+
+.left-info{
+
+  line-height: 1.4;
+}
+
+
+
+/* ROOM */
+
+.room{
+
+  margin-top: 10px;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+
+
+/* TABLE */
+
+table{
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  margin-top: 8px;
+
+  table-layout: fixed;
+}
+
+th,
+td{
+
+  border: 1.5px solid black;
+
+  text-align: center;
+
+  height: 42px;
+
+  font-size: 16px;
+
+  padding: 2px;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+}
+
+th{
+
+  font-size: 18px;
+}
+
+
+
+/* BOTTOM BOX */
+
+.bottom-box{
+
+  width: 220px;
+
+  margin-left: auto;
+
+  margin-top: 15px;
+}
+
+.bottom-box table{
+
+  margin: 0;
+}
+
+.bottom-box td{
+
+  height: 24px;
+}
+
+
+
+/* PRINT */
+
+@media print{
+
+  @page{
+    size: A4 landscape;
+    margin: 5mm;
+  }
+
+  body{
+    background: white;
+    padding: 0;
+  }
+
+  .controls{
+    display: none;
+  }
+
+  .edit-bar{
+    display: none;
+  }
+
+  .page{
+
+    width: 100%;
+
+    min-height: auto;
+
+    margin: 0;
+
+    padding: 8px;
+
+    page-break-after: always;
+
+    box-shadow: none;
+  }
+
+  table{
+    margin-top: 5px;
+  }
+
+  th,
+  td{
+
+    height: 36px;
+
+    font-size: 14px;
+  }
+
+  th{
+    font-size: 15px;
+  }
+
+}

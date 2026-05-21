@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Seating Plan Generator
+  </title>
+
+  <link rel="stylesheet"
+    href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- CONTROL PANEL -->
+
+  <div class="controls">
+
+    <input type="text"
+      id="collegeName"
+      placeholder="College Name">
+
+    <input type="text"
+      id="examName"
+      placeholder="Exam Name">
+
+    <input type="text"
+      id="semester"
+      placeholder="Semester">
+
+    <input type="text"
+      id="examTime"
+      placeholder="Time">
+
+    <input type="number"
+      id="totalPages"
+      placeholder="Total Pages">
+
+    <input type="number"
+      id="rows"
+      placeholder="Rows">
+
+    <input type="number"
+      id="cols"
+      placeholder="Columns">
+
+    <input type="file"
+      id="excelFile"
+      accept=".xlsx,.xls">
+
+    <button id="generateBtn">
+      Generate Pages
+    </button>
+
+    <button onclick="window.print()">
+      Print
+    </button>
+
+  </div>
+
+
+
+  <!-- OUTPUT -->
+
+  <div id="output"></div>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
